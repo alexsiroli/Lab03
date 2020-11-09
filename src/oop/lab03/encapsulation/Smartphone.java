@@ -2,21 +2,21 @@ package oop.lab03.encapsulation;
 
 public class Smartphone {
 
-    private static final boolean DEF_HAS_GPS = true;
+	private static final boolean DEF_HAS_GPS = true;
     private static final boolean DEF_HAS_3G = true;
     private static final boolean DEF_HAS_NFC = true;
     private static final int DEF_SD_SIZE = 8192;
     private static final int DEF_RAM_SIZE = 1024;
     private static final int DEF_N_CPU = 2;
 
-    public int nCPU;
-    public int ram;
-    public int sdSize;
-    public String brand;
-    public String model;
-    public boolean hasGPS;
-    public boolean has3G;
-    public boolean hasNFC;
+    private int nCPU;
+    private int ram;
+    private int sdSize;
+    private String brand;
+    private String model;
+    private boolean hasGPS;
+    private boolean has3G;
+    private boolean hasNFC;
 
     public Smartphone(final int nCPU, final int ram, final int sdSize, final String brand, final String model, final boolean hasGPS, final boolean has3G, final boolean hasNFC) {
         this.nCPU = nCPU;
@@ -56,6 +56,70 @@ public class Smartphone {
         System.out.println("hasNFC: " + hasNFC + "\n");
     }
 
+    public int getnCPU() {
+		return nCPU;
+	}
+
+	public void setnCPU(int nCPU) {
+		this.nCPU = nCPU;
+	}
+
+	public int getRam() {
+		return ram;
+	}
+
+	public void setRam(int ram) {
+		this.ram = ram;
+	}
+
+	public int getSdSize() {
+		return sdSize;
+	}
+
+	public void setSdSize(int sdSize) {
+		this.sdSize = sdSize;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public boolean isHasGPS() {
+		return hasGPS;
+	}
+
+	public void setHasGPS(boolean hasGPS) {
+		this.hasGPS = hasGPS;
+	}
+
+	public boolean isHas3G() {
+		return has3G;
+	}
+
+	public void setHas3G(boolean has3g) {
+		has3G = has3g;
+	}
+
+	public boolean isHasNFC() {
+		return hasNFC;
+	}
+
+	public void setHasNFC(boolean hasNFC) {
+		this.hasNFC = hasNFC;
+	}
+	
     public static void main(final String[] args) {
         // 1) Creare lo smarthpone HTC One sdSize:1024
         Smartphone htcOne = new Smartphone("HTC", "One", 1024);

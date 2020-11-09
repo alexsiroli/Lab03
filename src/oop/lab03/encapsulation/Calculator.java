@@ -2,8 +2,8 @@ package oop.lab03.encapsulation;
 
 public class Calculator {
 
-    int nOpDone;
-    double lastRes;
+	private int nOpDone;
+    private double lastRes;
 
     Calculator() {
         nOpDone = 0;
@@ -33,6 +33,22 @@ public class Calculator {
         nOpDone++;
         return lastRes;
     }
+
+    public int getnOpDone() {
+		return nOpDone;
+	}
+
+	public void setnOpDone(int nOpDone) {
+		this.nOpDone = nOpDone;
+	}
+
+	public double getLastRes() {
+		return lastRes;
+	}
+
+	public void setLastRes(double lastRes) {
+		this.lastRes = lastRes;
+	}
 
     public static void main(final String[] args) {
         Calculator calc = new Calculator();
