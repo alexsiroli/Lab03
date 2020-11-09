@@ -24,8 +24,7 @@ public class AccountHolder {
         return this.userID;
     }
 
-    public String toString() {
-        // TODO: complete here
-        return "";
-    }
+	public String toString() {
+		return "AccountHolder [name=" + name + ", surname=" + surname + ", userID=" + userID + "]";
+	}
 }
